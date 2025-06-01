@@ -7,7 +7,19 @@ def home():
     return render_template('index.html')
 
 @app.route('/equipe')
-def ola_equipe():
+def equipe():
     return render_template('equipe.html')
+
+@app.route('/dicionario')
+def dicionario():
+    return render_template('dicionario.html')
+
+@app.route('/fundamentos')
+def fundamentos():
+    return render_template('fundamentos.html')
+
+@app.route('/perguntas')
+def perguntas():
+    return render_template('perguntas.html')
 
 app.run()
